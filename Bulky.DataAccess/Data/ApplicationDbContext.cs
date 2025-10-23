@@ -27,6 +27,39 @@ namespace Bulky.DataAccess.Data
                 new Category { Id = 3, Name = "History", DisplayOrder = 3 }
             );
 
+            modelBuilder.Entity<Company>().HasData(
+                new Company
+                {
+                    Id = 1,
+                    Name = "TechNova Solutions",
+                    StreetAddress = "123 Innovation Street",
+                    City = "Colombo",
+                    State = "Western Province",
+                    PostalCode = "00100",
+                    PhoneNumber = "011-2456789"
+                },
+    new Company
+    {
+        Id = 2,
+        Name = "GreenLeaf Organics",
+        StreetAddress = "45 Palm Grove",
+        City = "Kandy",
+        State = "Central Province",
+        PostalCode = "20000",
+        PhoneNumber = "081-2234567"
+    },
+    new Company
+    {
+        Id = 3,
+        Name = "AquaWave Technologies",
+        StreetAddress = "78 Marine Drive",
+        City = "Galle",
+        State = "Southern Province",
+        PostalCode = "80000",
+        PhoneNumber = "091-2245789"
+    }
+            );
+
             modelBuilder.Entity<Product>().HasData(
                 new Product
                 {
