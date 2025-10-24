@@ -20,11 +20,13 @@ namespace Bulky.DataAccess.Repository
         public UnitOfWork(ApplicationDbContext db) 
         {
             _db = db;
+            ApplicationUser = new ApplicationUserRepository(_db);
+            ShoppingCart = new ShoppingCartRepository(_db);
             Category = new CategoryRepository(_db);
             Product = new ProductRepository(_db);
             Company = new CompanyRepository(_db);
-            ShoppingCart = new ShoppingCartRepository(_db);
-            ApplicationUser = new ApplicationUserRepository(_db);
+            
+            
         }
         
 
