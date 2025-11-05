@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyWeb.Areas.Admin.Controllers
 {
-	public class OrderController : Controller
+	[Area("Admin")]
+    public class OrderController : Controller
 	{
 		private readonly IUnitOfWork _unitOfWork;
 		public OrderController(IUnitOfWork unitOfWork)
