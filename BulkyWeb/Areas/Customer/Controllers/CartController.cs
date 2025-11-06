@@ -127,6 +127,7 @@ namespace BulkyWeb.Areas.Customer.Controllers
 
 			if (applicationUser.CompanyId.GetValueOrDefault() == 0)
 			{
+                //Stripe logic
                 var domain = "https://localhost:7165/";
                 var options = new SessionCreateOptions
                 {

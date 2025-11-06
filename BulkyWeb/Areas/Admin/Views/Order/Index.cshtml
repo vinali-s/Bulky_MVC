@@ -38,31 +38,36 @@
         <div class="d-flex justify-content-between pb-5 pt-2">
             <span></span>
             <ul class="list-group list-group-horizontal-sm">
-                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="Inprocess"></a>
-                <li class="list-group-item" @inprocess>In Process</li>
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="inprocess">
+                <li class="list-group-item @inprocess">In Process</li>
+                </a>
+                
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="pending">
+                <li class="list-group-item @pending">Payment Pending</li>
+                </a>
+                
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="completed">
+                <li class="list-group-item @completed">Completed</li>
+                </a>
+                
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="approved">
+                <li class="list-group-item @approved">Approved</li>
+                </a>
+                
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="all">
+                <li class="list-group-item @all">All</li>
+                </a>
+                
             </ul>
-            <ul class="list-group list-group-horizontal-sm">
-                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="pending"></a>
-                <li class="list-group-item" @pending>Payment Pending</li>
-            </ul>
-            <ul class="list-group list-group-horizontal-sm">
-                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="completed"></a>
-                <li class="list-group-item" @completed>Completed</li>
-            </ul>
-            <ul class="list-group list-group-horizontal-sm">
-                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="approved"></a>
-                <li class="list-group-item" @approved>Approved</li>
-            </ul>
-            <ul class="list-group list-group-horizontal-sm">
-                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="all"></a>
-                <li class="list-group-item" @all>All</li>
-            </ul>
+            
+                
+            
         </div>
         <table id="tblData" class="table table-bordered table-striped" style="width:100%">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Namr</th>
+                    <th>Name</th>
                     <th>Phone Number</th>
                     <th>Email</th>
                     <th>Status</th>
