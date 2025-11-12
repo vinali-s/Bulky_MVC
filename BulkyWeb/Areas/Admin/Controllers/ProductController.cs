@@ -152,7 +152,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
                 _unitOfWork.Save();
                 TempData["success"] = "Image deleted successfully";
             }
-            return RedirectToAction(nameof(Upsert), new { id = productId };
+            return RedirectToAction(nameof(Upsert), new { id = productId });
 
         }
 
