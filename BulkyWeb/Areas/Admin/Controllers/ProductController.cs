@@ -128,12 +128,38 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
         }
 
+        public IActionResult DeleteImage(int imageId)
+        {
+            var imageToBeDeleted = _unitOfWork.ProductImage.Get(u=>u.id == imageId);
+            int productId = imageToBeDeleted.ProductId;
+            if (imageToBeDeleted != null)
+            {
+                if (!string.IsNullOrEmpty(imageToBeDeleted.ImageUrl))
+                {
+                    var oldImagePath =
+                     Path.Combine(_webHostEnvironment.WebRootPath,
+                     imageToBeDeleted.ImageUrl.TrimStart('\\'));
 
-        
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
 
-        #region API CALLS
+                }
 
-        [HttpGet]
+
+                _unitOfWork.ProductImage.Remove(imageToBeDeleted);
+                _unitOfWork.Save();
+                TempData["success"] = "Image deleted successfully";
+            }
+            return RedirectToAction(nameof(Upsert), new { id = productId };
+
+        }
+
+
+            #region API CALLS
+
+            [HttpGet]
         public IActionResult GetAll()
         {
             List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
