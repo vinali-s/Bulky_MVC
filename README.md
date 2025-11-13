@@ -51,5 +51,3 @@ It covers everything from **product management** to **order processing**, **Stri
 
 ---
 
-## 📂 Project Structure
-
