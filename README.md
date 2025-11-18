@@ -1,8 +1,4 @@
-<img width="1920" height="1246" alt="screencapture-localhost-7165-2025-11-18-13_42_58" src="https://github.com/user-attachments/assets/944dcb07-76ff-4288-9f21-bd382d14a704" />
-<img width="1920" height="912" alt="screencapture-localhost-7165-Identity-Account-Register-2025-11-18-13_43_30" src="https://github.com/user-attachments/assets/9364cba2-499c-43df-a0d9-162855640382" />
-<img width="1920" height="912" alt="screencapture-localhost-7165-Customer-Cart-2025-11-18-13_44_58" src="https://github.com/user-attachments/assets/54291f66-06ba-42d7-9b27-6b34b16be84f" />
-<img width="1920" height="912" alt="screencapture-localhost-7165-Customer-Cart-Summary-2025-11-18-13_45_25" src="https://github.com/user-attachments/assets/dbdefea3-7322-4e63-81d1-19c4ad34763a" />
-<img width="1920" height="912" alt="screencapture-localhost-7165-Customer-Home-Details-2025-11-18-13_45_46" src="https://github.com/user-attachments/assets/312e0e86-1db9-47af-94d4-b2d9282fc95e" />
+
 # 🛍️ E-Commerce Web Application (.NET Core MVC)
 
 This project was developed as part of the **Udemy Course: ".NET Core MVC - The Complete Guide 2025 [E-commerce]"**, following a step-by-step implementation of a full-featured e-commerce web application using modern ASP.NET Core MVC practices.
@@ -55,4 +51,8 @@ It covers everything from **product management** to **order processing**, **Stri
 | **Architecture** | Repository Pattern, Unit of Work, Dependency Injection |
 
 ---
-
+<img width="1920" height="1246" alt="screencapture-localhost-7165-2025-11-18-13_42_58" src="https://github.com/user-attachments/assets/944dcb07-76ff-4288-9f21-bd382d14a704" />
+<img width="1920" height="912" alt="screencapture-localhost-7165-Identity-Account-Register-2025-11-18-13_43_30" src="https://github.com/user-attachments/assets/9364cba2-499c-43df-a0d9-162855640382" />
+<img width="1920" height="912" alt="screencapture-localhost-7165-Customer-Cart-2025-11-18-13_44_58" src="https://github.com/user-attachments/assets/54291f66-06ba-42d7-9b27-6b34b16be84f" />
+<img width="1920" height="912" alt="screencapture-localhost-7165-Customer-Cart-Summary-2025-11-18-13_45_25" src="https://github.com/user-attachments/assets/dbdefea3-7322-4e63-81d1-19c4ad34763a" />
+<img width="1920" height="912" alt="screencapture-localhost-7165-Customer-Home-Details-2025-11-18-13_45_46" src="https://github.com/user-attachments/assets/312e0e86-1db9-47af-94d4-b2d9282fc95e" />
